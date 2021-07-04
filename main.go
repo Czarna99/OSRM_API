@@ -10,6 +10,6 @@ import (
 
 
 func main() {
-	http.HandleFunc("/routes", data.Route)
+	http.HandleFunc("/routes", data.OsrmRouteCalculation)
 	http.ListenAndServe(":8080", nil)
 }
